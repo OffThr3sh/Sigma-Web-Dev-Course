@@ -1,0 +1,1 @@
+alert("Welcome To Mrutyunjay's Website. Feel free to click around..")
