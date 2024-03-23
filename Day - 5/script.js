@@ -1,0 +1,1 @@
+alert("Welcome to my page whch shows Train Image")
