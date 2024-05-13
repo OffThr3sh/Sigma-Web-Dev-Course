@@ -1,0 +1,58 @@
+<!-- You are given 12 files : 6 audio and 6 video.
+Design a website using HTML only which shows these 12 files.
+1.mp3, 2.mp3, 3.mp3, ........, 6.mp3
+1.mp4, 2.mp4, 3.mp4, ........, 6.mp4 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <style>
+        #Vid_Head
+        {
+            color: red;
+        }
+
+        #Aud_Head
+        {
+            color: green;
+        }
+
+        body
+        {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <header style="color: yellow;">
+        Website For List of Videos and Audios
+    </header>
+
+    <main>
+        <h1 id="Vid_Head">Videos For The Day</h1>
+        <div>
+            <video src="1.mp4"  width="250" style="background-color: greenyellow;"  controls preload="auto"></video>
+            <video src="2.mp4"  width="250" style="background-color: greenyellow;"  controls preload="auto"></video>
+            <video src="3.mp4"  width="250" style="background-color: greenyellow;"  controls preload="auto"></video>
+            <video src="4.mp4"  width="250" style="background-color: greenyellow;"  controls preload="auto"></video>
+            <video src="5.mp4"  width="250" style="background-color: greenyellow;"  controls preload="auto"></video>
+        </div>
+
+        <h1 id="Aud_Head">Audios For The Day</h1>
+        <div>
+            <audio src="1.mp3" controls preload="auto"></audio>
+            <audio src="2.mp3" controls  preload="auto"></audio>
+            <audio src="3.mp3" controls  preload="auto"></audio>
+            <audio src="4.mp3" controls  preload="auto"></audio>
+            <audio src="5.mp3" controls  preload="auto"></audio>
+        </div>
+    </main>
+
+    <footer style="color: yellow;">
+        Created by - Mrutyunjay Patel
+    </footer>
+</body>
+</html>
