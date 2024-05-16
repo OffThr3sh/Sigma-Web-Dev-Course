@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>CSS Selectors MasterClass</title>
+    <style>
+        /* Element Selector - The Drawback of Element Selector is the moment you add the second div,
+        The same colour (i.e. Red in this case) will be applied to both the div  */
+        div
+        {
+            background-color: yellow;
+        }
+
+        /* Class Selector */
+
+        .red
+        {
+            background-color: red;
+        }
+
+        /* Id Selector */
+
+        #green
+        {
+            background-color: green;
+        }
+
+        /* Child Selector */
+
+        div > p
+        {
+            /* Will only work when an para is inside the div directly OR as you provided the condition */
+            color: greenyellow;
+            background-color: yellow;
+        }
+
+        /* Descendent Selector */
+
+        div p
+        {
+            /* The Descendent selector ensures that the condition here (i.e. para) is inside the parent class (i.e. div)
+            So no matter if a para is inside an article, span or any other tag, this rule follows */
+            color: black;
+            background-color: white;
+        }
+
+        /* Universal Selector */
+
+        * {
+            margin: 0%;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+
+        a:visited
+        {
+            color: red;
+        }
+
+        a:link
+        {
+            color: greenyellow;
+        }
+
+        a:active
+        {
+            background-color: blueviolet;
+        }
+
+        a:hover
+        {
+            background-color: aqua;
+        }
+
+        p:first-child
+        {
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+
+    <main class="one">
+        <p>
+            I am First Child
+        </p>
+        
+        <p>
+            I am Second Child
+        </p>
+    </main>
+
+    <div class="red">
+        I am div
+        <p>
+            I am the child selector example inside div para
+        </p>
+    </div>
+
+    <div>
+        I am second div
+    </div>
+
+    <div id="green">
+        I am the third div
+    </div>
+
+    <a href="http://google.com">Google</a>
+    <a href="http://facebook.com">Facebook</a>
+</body>
+</html>
