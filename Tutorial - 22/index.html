@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units - px, rem, em, vh, vw, % & more</title>
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+        }
+        html
+        {
+            font-size: 12px;
+        }
+        .box
+        {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2134px; */
+            width: 80vw;
+            height: 10vh;
+            background-color: aquamarine;
+            margin: auto;
+        }
+        .container
+        {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2134px; */
+            width: 80vw;
+            height: 80vh;
+            min-height: 80vh;
+            background-color: aquamarine;
+            margin: 23px auto;
+            /* font-size: 18px; */
+        }
+        .container > div
+        {
+            /* font-size: 2em; */
+            border: 2px solid red;
+            font-size: 2rem;
+            width: 50%;
+        }
+        .container > div > div
+        {
+            border: 2px solid blue;
+            width: 50%;
+        }
+        .mycontainer
+        {
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto;
+            background-color: red;
+            color: yellow;
+            font-size: 22px;
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This Is a Box
+    </div>
+    <div class="container">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam provident temporibus, quidem, sapiente, asperiores totam officia placeat obcaecati doloremque tempora beatae in eveniet libero? Pariatur cumque blanditiis sapiente molestias dolores nulla optio omnis dolorum? Explicabo incidunt dicta, pariatur placeat omnis nam tenetur rerum et debitis amet, quae delectus itaque labore sapiente dolores aut saepe repudiandae magni!
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quisquam labore magni delectus neque sequi aliquam pariatur consequatur, beatae distinctio!
+            </div>
+        </div>
+    </div>
+    <div class="mycontainer">
+        Hi, My name is Thr3sh
+    </div>
+</body>
+</html>
