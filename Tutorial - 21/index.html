@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+
+        /* The colour for the h1 tag depends upon the last class or tag it is used, in this case it's cpurple. but we use specificity for the color selector which is in order - 
+        inline style > id selector > class or attribute selector > Element Selector > Universal Selector */
+
+        h1
+        {
+            color: aqua;
+        }
+        .yellow
+        {
+            color: yellow;
+        }
+        .cred
+        {
+            color: red;
+        }
+        .cpurple
+        {
+            color: purple;
+        }
+        /* [data-x=a]
+        {
+            background-color: red;      This is an example of Attribute selector where it says whichever contains this above attribute in this case "data-x=a", change the colour to mentioned color
+        } */
+    </style>
+</head>
+<body>
+    <!-- <h1 style="color: greenyellow;" class="yellow cred cpurple">  Example of inline Selector -->
+    <!-- <h1 class="yellow cred cpurple" data-x="a">         Example of Attribute Selector (Refer Above) -->
+    <h1 class="yellow cred cpurple" data-x="a">
+        My Name Is Mrutyunjay
+    </h1>
+</body>
+</html>
