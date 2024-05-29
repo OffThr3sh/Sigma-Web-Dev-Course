@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 3 - Making a card</title>
+    <style>
+        *
+        {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: whitesmoke;
+        }
+        .card
+        {
+            background-color: white;
+            width: 344px;
+            height: 544px;
+            border-radius: 12px;
+            box-shadow: 8px 8px 8px 8px rgb(85, 86, 136);
+        }
+        .image
+        {
+            padding: 5px;
+        }
+        .image img
+        {
+            border-radius: 12px;
+
+        }
+        .capsules
+        {
+            padding: 0 15px;
+        }
+        .capsules span
+        {
+            border: 1px solid gray;
+            padding: 0px 8px;
+            border-radius: 12px;
+            font-size: 12px;
+        }
+        .content
+        {
+            padding: 3px 13px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .content h2
+        {
+            font-size: 20px;
+            padding: 5px;
+        }
+        .content p
+        {
+            font-size: 12px;
+            padding: 5px;
+        }
+        .read_more
+        {
+            text-align: center;
+        }
+        .read_more button
+        {
+            padding: 15px 30px;
+            border: 0;
+            border-radius: 30px;
+            background-color:#e1eeff;
+            color: #56a6fc;
+            font-size: 12px;
+            font-weight: 800;
+            cursor: pointer;
+        }
+        .read_more button:hover
+        {
+            color: #56a6fc;
+            background-color: #dce6f0;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="image">
+            <img  width="334px" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/handsome-man-rowing-in-boat-stefano-cavoretto.jpg" alt="">
+        </div>
+
+        <div class="capsules">
+            <span>Nature</span>
+            <span>Lake</span>
+        </div>
+
+        <div class="content">
+            
+            <h2>Lorem</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto sed dolore nostrum, architecto iure voluptatem, quis reiciendis voluptatibus harum, assumenda similique veritatis iste. Error adipisci tempora ratione tempore, consequuntur placeat quaerat qui omnis necessitatibus. Nihil rem sit quae. Vel non eaque earum accusamus? Quos exercitationem deleniti, nobis repudiandae porro delectus!
+            </p>
+        </div>
+        <div class="read_more">
+            <button>Read More</button>
+        </div>
+    </div>
+</body>
+</html>
