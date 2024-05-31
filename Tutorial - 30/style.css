@@ -1,0 +1,43 @@
+:root
+{
+    --color: rgb(234, 0, 255); /* Global Variable color */
+    --seccolor: rgb(236, 112, 220); /* Global Variable of secondary color */
+    --defpad: 24px;
+    --defop: 0.2;
+}
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+.nav
+{
+    background-color: var(--color);
+}
+
+ul
+{
+    display: flex;
+}
+
+ul li
+{
+    opacity: var(--defop);
+    --color: green;
+    list-style: none;
+    padding: var(--defpad); /* Using Global variable the padding has been set */
+    border: 12px solid var(--seccolor);
+}
+
+ul li:first-child
+{
+    --color: rgb(238, 43, 17); /* Local Variable */
+    background-color: var(--color, rgb(234, 0, 255)); /* It will be using local variable instead of global variable , if the local variable isn't found, it will be searching for alternate color as given "rgb value above", if it is also not present then it will be searching for global variable color */
+}
+
+.container
+{
+    background-color: var(--seccolor);
+}
